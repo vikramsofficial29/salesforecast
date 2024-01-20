@@ -1,0 +1,32 @@
+nav{
+    display: inline;
+    margin-left: 55%; 
+  }
+  
+ nav a
+ {
+    padding: 2% 4%;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+  .navbar{
+    padding-top: 3%;
+    padding-bottom: 2%;
+    background-color: #19A7CE;
+  }
+iframe{
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 3% ;
+  }
+  
+  .footer-content {
+    text-align: center;
+  }

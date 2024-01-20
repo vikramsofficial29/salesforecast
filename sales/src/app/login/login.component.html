@@ -1,0 +1,42 @@
+
+<div class="full">
+  <div class="logtxt">
+    <h1>WELCOME USER !</h1>
+    <p>Type Your Registered Username And Password To Continue</p>
+    
+  </div>
+  
+  <div>
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <h2>LOGIN</h2>
+
+
+      <div>
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter The Username" id="username" name="username" [(ngModel)]="username" required>
+      </div>
+
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter The Password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+
+      <div class="error-message" *ngIf="errorMessage">
+        <p>{{ errorMessage }}</p>
+      </div>
+
+      <div> <p>Don't Have An Account? <a routerLink="/signup">SignUP</a> </p></div>
+
+
+      <button type="submit">Login</button>
+
+
+
+    </form>
+
+
+    
+</div>
+
+</div>

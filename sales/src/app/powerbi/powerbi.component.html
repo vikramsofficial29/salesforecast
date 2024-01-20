@@ -1,0 +1,51 @@
+<div class="navbar">    
+    <nav>
+        <a routerLink="/upload">BACK</a>
+        <a routerLink="/login">LOGOUT</a>
+    </nav>
+  </div>
+
+
+<h1>SALES FORECASTING</h1>
+
+
+  <div class="output">
+
+    <div class="outimg">
+      <img src="../assets/chart.png" alt="">
+      <br>
+      <br>
+      <img src="../assets/chart1.png" alt="">
+    </div>
+
+    <div class="ouptvalue">
+      <div class="opv">
+        <h1> PREDICTION VALUES </h1>
+          <!-- <p *ngFor="let label of chartLabels; let i = index" class="valuep">
+            {{ label }} - {{ chartValues[i] }}
+          </p> -->
+          <table>
+            <thead>
+              <tr>
+                <th>Label</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let label of chartLabels; let i = index">
+                <td>{{ label }}</td>
+                <td>{{ chartValues[i] }}</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- <iframe title="dash" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=f14e9c90-e617-4002-984f-36f4a486537c&autoAuth=true&ctid=70ad6609-70d8-4962-a379-3581f839202a" frameborder="0" allowFullScreen="true"></iframe> -->
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2023 Sales Forecasting. All rights reserved.</p>
+    </div>
+  </footer>

@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  }
+  .signform{
+    background-color: #19A7CE ;
+    width: 150%;
+    height: 79vh;
+    padding-top: 10%;
+   
+  }
+
+  
+  .signform h1{
+    color: white;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 3%;
+    color: white;
+
+  }
+
+  p{
+    margin-bottom: 3%;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  p a{
+    color: white;
+    text-decoration: none;
+  }
+
+
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 3%;
+    background-color: white;
+    padding: 2%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3%;
+    
+  }
+  
+  button{
+    background-color: white ;
+    color: #19A7CE;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #128BAB;
+  }
+
+  .full{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .signimg img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }

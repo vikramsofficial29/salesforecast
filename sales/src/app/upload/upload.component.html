@@ -1,0 +1,108 @@
+<!-- 
+  
+
+  <div>
+    <h2>Upload File</h2>
+    <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+      <input type="file" (change)="onFileSelected($event)" accept=".csv" />
+      <button type="submit">Upload</button>
+    </form>
+    <div *ngIf="message">{{ message }}</div>
+    <div *ngIf="error">{{ error }}</div>
+    <pre *ngIf="">{{ processedData | json }}</pre>
+
+    
+    
+  </div>
+  
+  
+   -->
+
+   
+<div class="navbar">    
+  <nav>
+      <a routerLink="/home">HOME</a>
+      <a routerLink="/dash">DASHBOARD</a>
+      <a routerLink="/login">LOGOUT</a>
+  </nav>
+</div>
+<b> <h1>SALES FORECAST</h1></b>
+<div class="full">
+<div class="upimg">
+  <img src="../assets/3.jpg" alt="upimg">
+</div>
+
+   <div class="formup">
+
+    <form action="">
+
+      <label for="">FILE UPLOAD</label>
+      <div class="uploaddiv"> 
+        <input type="file" (change)="onFileSelected($event)" accept=".csv">
+      </div>
+      <h1>{{em}}</h1>
+
+      <label for="">PERIODICITY :</label>
+
+      <select class="select1" name="salesType" [(ngModel)]="selectcheck">
+        <option value="yearly">Yearly sales</option>
+        <option value="monthly">Monthly sales</option>
+        <option value="weekly">Weekly sales</option>
+        <option value="daily">Daywise sales</option>
+      </select>
+
+      <div class="yearp" *ngIf="selectcheck === 'yearly'">
+        <div class="froml1">
+          <label for="">FROM</label>
+          <input class="yecls" type="number" min="2019" max="2030" step="1" placeholder="Year" name="yearFrom" [(ngModel)]="yearFrom">
+        </div>
+        <div class="froml1">
+          <label for="">NUMERIC</label>
+          <input type="number" min="1" max="10" step="1" placeholder="Number" name="yearTo" [(ngModel)]="yearTo">
+        </div>
+      </div>
+      <div class="yearp" *ngIf="selectcheck === 'monthly'">
+        <div class="froml1">
+          <label for="">YEAR</label>
+          <input type="number" min="2019" max="2030" step="1" placeholder="Year" name="yearForMonthly" [(ngModel)]="yearForMonthly">
+        </div>
+        <div class="froml1">
+          <label for="">NUMERIC</label>
+          <input type="number" min="1" max="52" step="1" placeholder="Number" name="numForMonthly" [(ngModel)]="numForMonthly">
+        </div>
+      </div>
+      <div *ngIf="selectcheck === 'weekly'" class="yearp">
+        <div class="froml1">
+          <label for="">YEAR</label>
+          <input type="number" min="2019" max="2030" step="1" placeholder="Year" name="yearForweekly" [(ngModel)]="yearForweekly">
+        </div>
+        <div class="froml1">
+          <label for="">NUMERIC</label>
+          <input type="number" min="1" max="12" step="1" placeholder="Number" name="numForweekly" [(ngModel)]="numForweekly">
+        </div>
+      </div>
+      <div class="yearp" *ngIf="selectcheck === 'daily'">
+        <div class="froml1">
+          <label for="">YEAR</label>
+          <input type="number" min="2019" max="2030" step="1" placeholder="Year" name="yearForDaily" [(ngModel)]="yearForDaily">
+        </div>
+        <div class="froml1" style="margin-right: 6%;">
+          <label for="">MONTH</label>
+          <input type="number" min="1" max="12" step="1" placeholder="Month" name="monthForDaily" [(ngModel)]="monthForDaily">
+        </div>
+        <div class="froml1" style="margin-right: 6%;">
+          <label for="">NUMERIC</label>
+          <input type="number" min="1" max="30" step="1" placeholder="Number" name="dayForDaily" [(ngModel)]="dayForDaily">
+        </div>
+      </div>
+      <br>
+      <button (click)="upFile()">FORECAST</button>
+    </form>
+  </div>
+</div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2023 Sales Forecasting. All rights reserved.</p>
+    </div>
+  </footer>

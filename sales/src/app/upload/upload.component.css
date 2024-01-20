@@ -1,0 +1,142 @@
+ nav{
+    display: inline;
+    margin-left: 55%; 
+  }
+  
+ nav a
+ {
+    padding: 2% 4%;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+  .navbar{
+    padding-top: 3%;
+    padding-bottom: 2%;
+    background-color: #19A7CE;
+  }
+
+  h1{
+    font-family: 'Montserrat';
+    font-weight: 900;
+    text-align: center;
+    /* margin-left: 10%; */
+    margin-top: 3%;
+    color: black;
+    letter-spacing: 8px;
+    font-size: 40px;
+}
+
+
+
+  
+ .uploaddiv input::file-selector-button {
+    background-color: #19A7CE;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Montserrat';
+ }
+  
+
+.formup {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-right: 30%;
+  
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    text-align: center;
+  }
+  
+  .select1{
+  padding: 6px;
+  width: 80%;
+
+  }
+
+  .uploaddiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .uploaddiv p {
+    margin-right: 10px;
+  }
+  
+  .select1 {
+    margin-bottom: 10px;
+  }
+  
+  .yearp {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+  }
+  
+  .froml1 {
+    margin-right: 5%;
+    padding: 6px;
+  }
+
+  .yearp input {
+    padding: 5px;
+    width: 90%;
+    
+  }
+  
+  button {
+    
+    background-color: #19A7CE;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #127b9d;
+  }
+
+  .upimg img{
+    width: 80%;
+    margin-left: 15%;
+   
+  }
+  
+.full{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 18%;
+}
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 3% ;
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+  

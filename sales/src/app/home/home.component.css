@@ -1,0 +1,113 @@
+.cont {
+    min-height: 100vh;
+    background-color: #19A7CE;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+h1{
+    position: absolute;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    text-align: center;
+    margin: 20%;
+    margin-left: 30%;
+    color: white;
+    letter-spacing: 8px;
+    font-size: 40px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    height: 100vh; /* Sets the height of the container to the full viewport height */
+  }
+  
+
+button{
+    margin-top: 4%;
+    /* margin-left: 7%; */
+    margin-right: 5%;
+    /* margin-left: 42%; */
+    /* margin-left: 7%; */
+    border: none;
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: #212A3E;
+    border-radius: 5px;
+}
+
+.abt{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.abtcont h2{
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  letter-spacing: 5px;
+}
+
+.abtimg img{
+  width: 70%;
+  margin-left: 15%;
+}
+
+
+.abtcont p{
+  font-size: 18px;
+  text-align: justify;
+  margin-left: 5%;
+
+ 
+}
+.abtcont{
+  width: 100%;
+}
+.cont nav{
+  display: inline;
+  margin-left: 48%;
+  
+
+
+}
+
+.cont nav a{
+ 
+  padding: 2% 4%;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+
+}
+.navbar{
+  padding-top: 3%;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-content {
+  text-align: center;
+}
+
